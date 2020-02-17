@@ -1,0 +1,23 @@
+<%= form_with(url: sessions_path, local: true) do |form| %>
+  <% if flash[:error].present? %>
+    <div id="error_explanation">
+      <ul>
+        <li><%=  flash[:error] %></li>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+<p>Hello, <%= @user.email %></p>
+
+<p>Your favorite show is going to telecast in next 30 minutes.</p>
+<p>below are details,</p>
+<p>Channel Name: <b><%= @show.channel.name %></b></p>
+<p>Show Name: <b><%= @show.name %></b></p>
+<p>Show timing: <b><%= @show.start_time.to_s(:default_format) %></b></p>
+
+<p>Thanks,</p>

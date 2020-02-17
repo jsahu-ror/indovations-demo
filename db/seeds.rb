@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-user = User.find_or_initialize_by(email: 'test_user@tets.com')
+user = User.find_or_initialize_by(email: 'test_user@tess.com')
 user.password = 'password'
 user.save!
 

@@ -1,0 +1,11 @@
+
+
+<ul class='header'>
+  <li><%= link_to 'Home', root_path %></li>
+    <% if @current_user %>
+        <li><%= link_to 'Favorite shows',favorites_shows_path %></li>
+        <li style="float:right"><%= link_to 'Log out', session_path(@current_user.id), method: :delete, class: "active" %></li>
+
+    <% end %>
+</ul>
+

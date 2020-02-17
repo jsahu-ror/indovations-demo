@@ -40,6 +40,8 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'letter_opener', '~> 1.7'
+  gem 'pry', '~> 0.12.2'
   gem 'rubocop', '~> 0.79.0'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -55,3 +57,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'whenever', '~> 1.0'
+
+gem 'letter_opener_web', '~> 1.4'

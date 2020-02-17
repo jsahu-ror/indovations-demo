@@ -1,0 +1,39 @@
+<h1>All Shows</h1>
+
+<%= form_with(url: search_shows_path, local: true, method: :get) do |form| %>
+  <div class="actions">
+    <%= form.label 'search' %>
+    <%= form.text_field :keyword, value: params[:keyword] %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<br>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>Show</th>
+      <th>Time</th>
+      <th> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shows.each do |show| %>
+      <tr>
+        <td><%= show.channel.name %></td>
+        <td><%= show.name %></td>
+        <td><%= show.start_time.to_s(:default_format) %></td>
+        <td><%= link_to 'Add to favorites', add_to_favorite_show_path(show.id), method: :post  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
