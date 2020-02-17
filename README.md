@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please run below command to setup the application
 
-Things you may want to cover:
+* bundle install
+* rake db:create
+* rake db:migrate
+* rake db:seed
+* bundle exec whenever
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please login using below credentials.
+email: test_user@tess.com
+password: password
